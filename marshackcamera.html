@@ -22,7 +22,7 @@ $.ajax({
     dataType: 'json',
     async: false,
     success: function(result){
-        // call the function that handles the response/results
+        
     },
     error: function(){
     }
@@ -44,7 +44,7 @@ const constraints = {
   }
 };
 
-// Access webcam
+
 async function init() {
   try {
     const stream = await navigator.mediaDevices.getUserMedia(constraints);
@@ -54,7 +54,7 @@ async function init() {
   }
 }
 
-// Success
+
 function handleSuccess(stream) {
   window.stream = stream;
   video.srcObject = stream;
@@ -69,7 +69,9 @@ var context = canvas.getContext('2d');
 
 }
 
-// Load init
+
+ 
+   
 init();
 
 </script>
